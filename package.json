@@ -1,11 +1,11 @@
 {
-    "name": "fill_in_name",
+    "name": "your-pkg-name",
     "version": "0.0.1",
     "description": "fill in description",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/beatthat/color-property-utils.git"
+        "url": "git+https://github.com/your-scope/your-pkg-name.git"
     },
     "files": [
         "index.js",
@@ -15,9 +15,9 @@
     "author": "larrykirschner@gmail.com",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/beatthat/color-property-utils/issues"
+        "url": "https://github.com/your-scope/your-pkg-name/issues"
     },
-    "homepage": "https://github.com/beatthat/color-property-utils",
+    "homepage": "https://github.com/your-scope/your-pkg-name",
     "scripts": {
         "postinstall": "node scripts/postinstall.js",
         "preinstall:test": "rm -f *.tgz",
