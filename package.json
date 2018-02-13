@@ -26,7 +26,8 @@
         "template:update": "node scripts/template-update.js",
         "cp:test2src": "cd test && node scripts/cp-test2src.js",
         "overwrite:test2src": "cd test && node scripts/overwrite-test2src.js",
-        "pub:tag": "git add -A && git commit -m ${npm_package_version} && git tag -a ${npm_package_version} -m ${npm_package_version} && git push origin master && git push origin ${npm_package_version}"
+        "version": "git add -A",
+        "postversion": "git push && git push --tags && npm run clean"
     },
     "dependencies": {
         "path": "^0.12.7",
