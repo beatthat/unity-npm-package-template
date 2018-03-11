@@ -3,11 +3,12 @@ const path = require('path');
 
 const pkgRoot = path.join(__dirname, '..');
 
-unpm.pkg2UnityInstall(pkgRoot, (err, info) => {
+unpm.unityPackage.installTemplate(pkgRoot, {
+    // verbose: opts.verbose
+},
+(err, info) => {
     if(err) {
         console.error('install to unity failed with error: ', err);
         return;
     }
-
-    console.log(`installed to ${info.unity_install_path}`);
 });
