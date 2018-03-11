@@ -3,7 +3,7 @@ const path = require('path');
 
 const pkgRoot = path.join(__dirname, '..');
 
-unpm.unityPackage.installTemplate(pkgRoot, {
+unpm.unityProject.installPackageToUnity(pkgRoot, {
     // verbose: opts.verbose
 },
 (err, info) => {
