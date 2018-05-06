@@ -5,7 +5,7 @@ const unitySrcRoot = path.join(__dirname, '..')
 
 const pkgName = path.basename(path.join(unitySrcRoot, '..'))
 const unityInstallPath = path.join(__dirname, '..', 'Assets', 'Plugins', 'packages', pkgName)
-const packageTargetPath = path.join(unitySrcRoot, '..', 'Runtime')
+const packageTargetPath = path.join(unitySrcRoot, '..', 'Runtime', pkgName)
 
 unpm.copyFromUnity2Pkg(pkgName, {
 	verbose: true,
