@@ -1,21 +1,40 @@
-const unpm = require('unity-npm-utils')
-const path = require('path')
+// const unpm = require('unity-npm-utils')
+// const path = require('path')
+//
+// const unitySrcRoot = path.join(__dirname, '..')
+//
+// const pkgName = path.basename(path.join(unitySrcRoot, '..'))
+// const unityInstallPath = path.join(__dirname, '..', 'Assets', 'Plugins', 'packages', pkgName)
+// const packageTargetPath = path.join(unitySrcRoot, '..', 'Runtime', pkgName)
+//
+// unpm.copyFromUnity2Pkg(pkgName, {
+// 	verbose: true,
+// 	unity_install_path: unityInstallPath,
+// 	package_target_path: packageTargetPath
+// })
+//     .then(info => {
+//         console.log(`cp-test2src succeeded for package ${pkgName}`)
+//     })
+//     .catch(err => {
+//         console.log('cp-test2src failed with error: %j\n%j', err, err.stack)
+//         process.exit(1)
+//     })
 
-const unitySrcRoot = path.join(__dirname, '..')
+const unpm = require('unity-npm-utils');
+const path = require('path');
 
-const pkgName = path.basename(path.join(unitySrcRoot, '..'))
-const unityInstallPath = path.join(__dirname, '..', 'Assets', 'Plugins', 'packages', pkgName)
-const packageTargetPath = path.join(unitySrcRoot, '..', 'Runtime', pkgName)
+const unitySrcRoot = path.join(__dirname, '..');
+const tgtPkgRoot = path.join(unitySrcRoot, '..');
 
-unpm.copyFromUnity2Pkg(pkgName, {
-	verbose: true,
-	unity_install_path: unityInstallPath,
-	package_target_path: packageTargetPath
-})
+unpm.copyFromUnity2PkgRoot(unitySrcRoot, tgtPkgRoot, { overwrite: false })
     .then(info => {
-        console.log(`cp-test2src succeeded for package ${pkgName}`)
+        const pkgName = (info && info.package) ?
+            info.package.name || '[package name unset]' :
+            '[package info missing from result]';
+
+        console.log(`cp-test2src succeeded for package ${pkgName}`);
     })
     .catch(err => {
-        console.log('cp-test2src failed with error: %j\n%j', err, err.stack)
-        process.exit(1)
+        console.log('cp-test2src failed with error: %j', err);
+        process.exit(1);
     })
