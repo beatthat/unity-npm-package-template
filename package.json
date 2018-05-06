@@ -1,6 +1,6 @@
 {
     "name": "your-pkg-name",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "fill in description",
     "main": "index.js",
     "repository": {
