@@ -2,9 +2,8 @@ const unpm = require('unity-npm-utils')
 const path = require('path')
 
 const unitySrcRoot = path.join(__dirname, '..')
-const tgtPkgRoot = path.join(unitySrcRoot, '..')
 
-const pkgName = path.basename(path.dirname(path.join(unitySrcRoot, '..')))
+const pkgName = path.basename(path.join(unitySrcRoot, '..'))
 
 unpm.copyFromUnity2Pkg(pkgName, { verbose: true })
     .then(info => {
