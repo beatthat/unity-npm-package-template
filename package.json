@@ -11,7 +11,8 @@
         "index.js",
         "scripts",
         "src",
-        "Runtime"
+        "Runtime",
+        "Samples"
     ],
     "author": "larrykirschner@gmail.com",
     "license": "MIT",
