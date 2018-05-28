@@ -22,3 +22,7 @@ manifest.json.meta
 EditorTestResults.xml
 
 package-lock.json
+
+
+ProjectSettings/*
+!ProjectSettings/ProjectSettings.asset
