@@ -1,7 +1,7 @@
 {
     "name": "your-pkg-name",
     "scope": "your-scope-or-github-name",
-    "version": "1.0.40",
+    "version": "1.0.41",
     "description": "fill in description",
     "main": "index.js",
     "repository": {
@@ -16,13 +16,13 @@
         "Samples"
     ],
     "keywords": [
-      "unity",
-      "unity3d",
-      "plugin",
-      "package",
-      "csharp",
-      "npm",
-      "unpm"
+        "unity",
+        "unity3d",
+        "plugin",
+        "package",
+        "csharp",
+        "npm",
+        "unpm"
     ],
     "author": "larrykirschner@gmail.com",
     "license": "MIT",
