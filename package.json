@@ -1,6 +1,6 @@
 {
     "name": "your-pkg-name",
-    "scope": "your-pkg-scope",
+    "scope": "your-scope-or-github-name",
     "version": "1.0.34",
     "description": "fill in description",
     "main": "index.js",
