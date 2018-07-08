@@ -15,6 +15,15 @@
         "Runtime",
         "Samples"
     ],
+    "keywords": [
+      "unity",
+      "unity3d",
+      "plugin",
+      "package",
+      "csharp",
+      "npm",
+      "unpm"
+    ],
     "author": "larrykirschner@gmail.com",
     "license": "MIT",
     "bugs": {
