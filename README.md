@@ -7,17 +7,17 @@ From your unity project folder:
 
 ## Development
 
-You can edit the code and samples in the test environment and then use ```npm run overwrite:test2src``` to sync changes back to the package src.
+You can edit the code and samples in the test environment and then use ```npm run test-install``` to sync changes back to the package src.
 
 ```
-    npm run install:test
+    npm run test-install
     cd test
 
     # edit code under Assets/Plugins/packages/{package.scope}/{package.name}
     # edit samples under Assets/Samples/packages/{package.scope}/{package.name}
 
     # sync changes back to src
-    npm run overwrite:test2src
+    npm run test-overwrite2src
 ```
 
 **REMEMBER:** changes made under the test folder are not saved to the package
