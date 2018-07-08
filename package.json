@@ -1,7 +1,7 @@
 {
     "name": "your-pkg-name",
     "scope": "your-scope-or-github-name",
-    "version": "1.0.38",
+    "version": "1.0.39",
     "description": "fill in description",
     "main": "index.js",
     "repository": {
