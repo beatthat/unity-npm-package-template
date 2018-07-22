@@ -12,7 +12,9 @@
         "scripts",
         "src",
         "Runtime",
-        "Samples"
+        "Samples",
+        "README.md",
+        "readmefiles"
     ],
     "keywords": [
         "unity",
